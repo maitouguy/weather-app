@@ -7,7 +7,64 @@
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
-  <body>
+  <body class="bg-[rgb(35,35,35)] p-3">
+    <form
+      class="bg-[rgb(40,40,40)] w-64 p-4 m-5 rounded shadow-xl text-white flex flex-col gap-2"
+    >
+      <p>* Search up a location</p>
+      <input
+        type="text"
+        name="location"
+        id="location"
+        class="bg-transparent border-b-white border-b pl-1 text-sm w-11/12"
+        required
+      />
+    </form>
+    <section
+      class="bg-[rgb(40,40,40)] w-64 p-4 m-5 rounded shadow-xl text-white flex flex-col items-center gap-3"
+    >
+      <h1 class="w-full">Current Conditions</h1>
+      <p>Clear night with 0 cloud coverage</p>
+      <div class="flex items-center h-6 w-full gap-2">
+        <img src="../assets/images/night.png" alt="" class="h-5/6 w-auto" />
+        <p>Night time with 0 Clouds</p>
+      </div>
+      <div class="flex items-center h-6 w-full gap-2">
+        <img
+          src="../assets/images/temperature.png"
+          alt=""
+          class="h-5/6 w-auto"
+        />
+        <p>Temperature : 70.3°</p>
+      </div>
+      <div class="flex items-center h-6 w-full gap-2">
+        <img src="../assets/images/droplet.png" alt="" class="h-5/6 w-auto" />
+        <p>Humidity : 60.3%</p>
+      </div>
+      <div class="flex items-center h-6 w-full gap-2">
+        <img src="../assets/images/full-moon.png" alt="" class="h-5/6 w-auto" />
+        <p>Moon phase : 0.77</p>
+      </div>
+      <div class="flex items-center h-6 w-full gap-2">
+        <img src="../assets/images/snow.png" alt="" class="h-5/6 w-auto" />
+        <p>Snow : none</p>
+      </div>
+      <div class="flex items-center h-6 w-full gap-2">
+        <img src="../assets/images/wind.png" alt="" class="h-5/6 w-auto" />
+        <p>Wind : 6.9 km/h</p>
+      </div>
+      <div class="flex items-center h-6 w-full gap-2">
+        <img src="../assets/images/sunrise.png" alt="" class="h-5/6 w-auto" />
+        <p>Sunrise time : 7:04</p>
+      </div>
+      <div class="flex items-center h-6 w-full gap-2">
+        <img src="../assets/images/sunset.png" alt="" class="h-5/6 w-auto" />
+        <p>Sunset time : 20:01</p>
+      </div>
+    </section>
+    <p class="text-sm text-[rgb(15,15,15)] absolute right-1 bottom-1">
+      Data fetched from visualcrossings.com API
+    </p>
     <script src="script.js"></script>
   </body>
 </html>
